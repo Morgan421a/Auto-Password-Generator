@@ -39,15 +39,13 @@ else:
 
 pass_store = str(input(("Would you like to store this password?\n"))).capitalize()
 
-
-while True:
-    if pass_store == "Yes":
-        print("Very well, I will store it within your password bank")
-        break
-    elif pass_store == "No":
-        print("Very well, I will not store this password")
-        break
-    else:
-        print("Sorry that input is invalid")
-        break
+if pass_store == "Yes":
+    print("Very well, I will store it within your password bank")
+        
+elif pass_store == "No":
+    print("Very well, I will not store this password")
+        
+else:
+    print("Sorry that input is invalid")
+        
 
